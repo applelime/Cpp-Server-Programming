@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <mutex>
+#include "ThreadExample.h"
 #include "../Util/PrimeNumber.h"
 
 const int maxCount = 150000;

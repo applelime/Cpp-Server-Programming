@@ -124,11 +124,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Thread\CriticalSection.cpp" />
     <ClCompile Include="Thread\ThreadExample.cpp" />
+    <ClCompile Include="Thread\DeadlockExample.cpp" />
     <ClCompile Include="Util\PrimeNumber.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Thread\CriticalSection.h" />
     <ClInclude Include="Thread\ThreadExample.h" />
+    <ClInclude Include="Thread\DeadlockExample.h" />
     <ClInclude Include="Util\PrimeNumber.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>

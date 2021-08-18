@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include "PrimeNumber.h"
 using namespace std;
 
