@@ -24,6 +24,9 @@
     <ClCompile Include="Thread\DeadlockExample.cpp">
       <Filter>Thread</Filter>
     </ClCompile>
+    <ClCompile Include="Thread\MyGameServer.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Util\PrimeNumber.h">
@@ -37,6 +40,9 @@
       <Filter>Thread</Filter>
     </ClInclude>
     <ClInclude Include="Thread\DeadlockExample.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\MyGameServer.h">
       <Filter>Thread</Filter>
     </ClInclude>
   </ItemGroup>
