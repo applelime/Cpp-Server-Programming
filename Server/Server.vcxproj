@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Thread\CriticalSection.cpp" />
+    <ClCompile Include="Thread\EventExample.cpp" />
     <ClCompile Include="Thread\MyGameServer.cpp" />
     <ClCompile Include="Thread\ThreadExample.cpp" />
     <ClCompile Include="Thread\DeadlockExample.cpp" />
@@ -132,6 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Thread\CriticalSection.h" />
+    <ClInclude Include="Thread\EventExample.h" />
     <ClInclude Include="Thread\MyGameServer.h" />
     <ClInclude Include="Thread\ThreadExample.h" />
     <ClInclude Include="Thread\DeadlockExample.h" />
