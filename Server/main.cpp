@@ -2,6 +2,7 @@
 #include "Thread/ThreadExample.h"
 #include "Thread/DeadlockExample.h"
 #include "Thread/EventExample.h"
+#include "Thread/SemaphoreExample.h"
 using namespace std;
 
 int main()
@@ -9,6 +10,7 @@ int main()
 	//PrimeNumberSinglethreaded();
 	//PrimeNumberMultithreaded();
 	//DeadLockExample();
-	EventExample();
+	//EventExample();
+	SemaphoreExample();
 	return 0;
 }

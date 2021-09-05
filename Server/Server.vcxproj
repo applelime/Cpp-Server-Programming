@@ -127,6 +127,7 @@
     <ClCompile Include="Thread\CriticalSection.cpp" />
     <ClCompile Include="Thread\EventExample.cpp" />
     <ClCompile Include="Thread\MyGameServer.cpp" />
+    <ClCompile Include="Thread\SemaphoreExample.cpp" />
     <ClCompile Include="Thread\ThreadExample.cpp" />
     <ClCompile Include="Thread\DeadlockExample.cpp" />
     <ClCompile Include="Util\PrimeNumber.cpp" />
@@ -135,6 +136,7 @@
     <ClInclude Include="Thread\CriticalSection.h" />
     <ClInclude Include="Thread\EventExample.h" />
     <ClInclude Include="Thread\MyGameServer.h" />
+    <ClInclude Include="Thread\SemaphoreExample.h" />
     <ClInclude Include="Thread\ThreadExample.h" />
     <ClInclude Include="Thread\DeadlockExample.h" />
     <ClInclude Include="Util\PrimeNumber.h" />

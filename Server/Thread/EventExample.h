@@ -5,4 +5,4 @@ void CreateEventsAndThreads(void);
 void WriteToBuffer(void);
 void CloseEvents(void);
 int EventExample(void);
-DWORD WINAPI ThreadProc(LPVOID);
+DWORD WINAPI EventThreadProc(LPVOID);

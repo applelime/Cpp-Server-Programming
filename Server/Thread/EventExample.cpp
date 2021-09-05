@@ -4,7 +4,7 @@
 #define THREADCOUNT 4 
 
 HANDLE writeEvent;
-HANDLE threads[THREADCOUNT];
+HANDLE eventThreads[THREADCOUNT];
 
 using namespace std;
 void CreateEventsAndThreads()
@@ -29,15 +29,15 @@ void CreateEventsAndThreads()
 	// 스레드 생성
 	for (i = 0; i < THREADCOUNT; i++)
 	{
-		threads[i] = CreateThread(
+		eventThreads[i] = CreateThread(
 			NULL,              // default security
 			0,                 // default stack size
-			ThreadProc,        // name of the thread function
+			EventThreadProc,        // name of the thread function
 			NULL,              // no thread parameters
 			0,                 // default startup flags
 			&threadID);
 
-		if (NULL == threads[i])
+		if (NULL == eventThreads[i])
 		{
 			cout << "CreateThread failed\n" << GetLastError();
 			return;
@@ -73,7 +73,7 @@ int EventExample()
 	cout << "메인 스레드가 다른 스레드의 종료를 기다리는 중.. \n";
 	DWORD waitResult = WaitForMultipleObjects(
 		THREADCOUNT,   // number of handles in array
-		threads,		// array of thread handles
+		eventThreads,		// array of thread handles
 		TRUE,          // wait until all are signaled
 		INFINITE);
 
@@ -95,7 +95,7 @@ int EventExample()
 	return 0;
 }
 
-DWORD WINAPI ThreadProc(LPVOID lpParam)
+DWORD WINAPI EventThreadProc(LPVOID lpParam)
 {
 	// lpParam not used in this example.
 	UNREFERENCED_PARAMETER(lpParam);
